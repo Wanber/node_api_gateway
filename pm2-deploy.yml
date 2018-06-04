@@ -1,7 +1,7 @@
 apps:
   - script      : dist/app.js
     name        : api_gateway
-    instances   : 10
+    instances   : 4
     exec_mode   : cluster
     watch       : true
     env         :
