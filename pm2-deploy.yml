@@ -1,0 +1,8 @@
+apps:
+  - script      : dist/app.js
+    name        : api_gateway
+    instances   : 10
+    exec_mode   : cluster
+    watch       : true
+    env         :
+      NODE_ENV  : prod

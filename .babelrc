@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "node": "9.1.0"
+        }
+      }
+    ]
+  ],
+  "env": {
+    "prod": {
+      "presets": [
+        "minify"
+      ]
+    }
+  }
+}
