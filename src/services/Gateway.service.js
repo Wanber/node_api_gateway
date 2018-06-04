@@ -42,7 +42,7 @@ export default class {
                 name     : endpoint.name,
                 path     : endpoint.path,
                 method   : endpoint.method
-            }, {}, {upsert: true}, () => {});
+            }, {}, {upsert: true, setDefaultsOnInsert: true}, () => {});
         });
     }
 
