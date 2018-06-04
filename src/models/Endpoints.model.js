@@ -3,8 +3,9 @@ export default {
     fields    : {
         name        : {
             type     : String,
-            required : true,
-            lowercase: true
+            required : false,
+            lowercase: true,
+            default  : null
         },
         path        : {
             type     : String,
@@ -41,7 +42,7 @@ export default {
         isEnabled   : {
             type    : Boolean,
             required: false,
-            default : false
+            default : true
         }
     },
     indexes   : [

@@ -21,9 +21,9 @@ export default class {
         this._endpointService = new EndpointService(mongoose);
         this._authService = new AuthService(mongoose);
         this._logService = new LogService(mongoose);
+        this._gatewayService = new GatewayService(mongoose);
 
         this._cacheService = new CacheService();
-        this._gatewayService = new GatewayService();
 
         this._morgan = morgan(process.env.NODE_ENV === 'dev' ? 'dev' : 'combined');
     }
